@@ -1,32 +1,34 @@
+let burger_menu = document.getElementById('myTopnav');
+let header_title = document.getElementById('header');
+
 menu.onclick = function myFunction() {
-    if (x.className === "topnav") {
-        x.className += " responsive";
-    } else {
-        x.className = "topnav";
+    if (burger_menu.className === "topnav") {
+        burger_menu.className += " responsive";
+    } else if(burger_menu.className === "topnav responsive"){
+        burger_menu.classList.remove(" responsive"); 
+    }else{
+        burger_menu.className = "topnav";
     };
     
-    if (y.className === "header") {
-        y.className += " th";
+    if (header_title.className === "header") {
+        header_title.className += " th";
     } else {
-        y.className = "header";
+        header_title.className = "header";
     };
 };
 
-menu_it.addEventListener('click', hidden_menu);
+let menu_item = document.getElementById('menu_it');
+menu_item.addEventListener('click', hidden_menu);
 function hidden_menu(){
-    console.log(x.className);
-    if (x.className === "topnav responsive") {
-        x.classList.remove('responsive');
+    if (burger_menu.className === "topnav responsive") {
+        burger_menu.classList.remove('responsive');
     } else{
-        x.className = "topnav responsive";
+        burger_menu.className = "topnav responsive";
     }
-    console.log(x.className);
 
-    console.log(y.className);
-    if (y.className === "header th") {
-        y.classList.remove("th");
+    if (header_title.className === "header th") {
+        header_title.classList.remove("th");
     }else{
-        x.className = "header th";
+        header_title.className = "header th";
     }
-    console.log(y.className);
 }

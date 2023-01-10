@@ -96,6 +96,9 @@ nav{
 }
 
 @media (max-width: 650px){
+    body{
+        font-size: 1rem;
+    }
     .header_logo{
         display: none;
     }
