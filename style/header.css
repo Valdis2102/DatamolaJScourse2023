@@ -64,8 +64,12 @@ nav{
     body{
         font-size: large;
     }
+    .header{
+        padding-bottom: 6px;
+        position: fixed;
+    }
     .th{
-        height: 250px;
+        height: 200px;
     }    
     .topnav a{
         display: none;
@@ -108,6 +112,7 @@ nav{
         padding-right: 2%;
     }
 }
+
 
 @keyframes twinkl{
     0%{
