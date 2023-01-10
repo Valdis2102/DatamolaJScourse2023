@@ -1,32 +1,37 @@
-:root{
+:root {
     --color: rgb(250, 243, 234);
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
 }
-a{
+
+a {
     text-decoration: none;
 }
-li{
+
+li {
     list-style: none;
 }
-body{
+
+body {
     font-family: 'Alatsi', serif;
     font-size: xx-large;
 }
-.header{
+
+.header {
     width: 100%;
     background-color: rgb(28, 27, 27);
     display: flex;
     justify-content: center;
     position: sticky;
     top: 0;
-    z-index: 1;   
+    z-index: 1;
     padding-bottom: 15px;
 }
-.header_logo{
+
+.header_logo {
     text-transform: uppercase;
     color: var(--color);
     text-align: center;
@@ -35,78 +40,95 @@ body{
     animation-duration: 1.5s;
     animation-iteration-count: 10;
 }
-.header_logo:hover{
+
+.header_logo:hover {
     animation-play-state: paused;
 }
-nav{
+
+nav {
     margin-left: 29%;
     text-align: center;
     font-size: x-large;
 }
-.topnav a{
+
+.topnav a {
     color: var(--color);
     text-align: center;
     margin-right: 16px;
     font-weight: bold;
 }
-#menu_item{
+
+#menu_item {
     transition: 100ms;
 }
-#menu_item:hover{
+
+#menu_item:hover {
     border-bottom: 3px solid #fcac45;
 }
-.topnav .icon{
+
+.topnav .icon {
     display: none;
 }
 
 
-@media (max-width: 980px) { 
-    body{
+@media (max-width: 980px) {
+    body {
         font-size: large;
     }
-    .header{
+
+    .header {
         padding-bottom: 6px;
         position: fixed;
     }
-    .th{
+
+    .th {
         height: 200px;
-    }    
-    .topnav a{
+    }
+
+    .topnav a {
         display: none;
     }
-    .topnav a.icon{
+
+    .topnav a.icon {
         float: right;
         padding-top: 1%;
         display: block;
         color: var(--color);
-    }   
-    nav{
-        width: 50%;        
-    } 
-    .topnav.responsive{
+    }
+
+    nav {
+        width: 50%;
+    }
+
+    .topnav.responsive {
         position: relative;
-        
+
     }
-    header .topnav.responsive{
-        height: 340px;        
+
+    header .topnav.responsive {
+        height: 340px;
     }
-    .topnav.responsive a{       
+
+    .topnav.responsive a {
         display: block;
         text-align: right;
     }
-    .topnav.responsive p{       
+
+    .topnav.responsive p {
         margin-top: 30px;
     }
 }
 
-@media (max-width: 650px){
-    body{
+@media (max-width: 650px) {
+    body {
         font-size: 1rem;
     }
-    .header_logo{
+
+    .header_logo {
         display: none;
     }
-    nav{
+
+    nav {
         width: 100%;
         margin: 0;
         padding-right: 2%;
@@ -114,14 +136,16 @@ nav{
 }
 
 
-@keyframes twinkl{
-    0%{
+@keyframes twinkl {
+    0% {
         opacity: 1;
     }
-    50%{
+
+    50% {
         opacity: .2;
     }
-    100%{
+
+    100% {
         opacity: 1;
     }
 }

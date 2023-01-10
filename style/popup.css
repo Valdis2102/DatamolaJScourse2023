@@ -8,10 +8,12 @@
     opacity: 0;
     visibility: hidden;
 }
-.popup:target{
+
+.popup:target {
     visibility: visible;
     opacity: 1;
 }
+
 .popup__body {
     min-height: 100%;
     display: flex;
@@ -19,12 +21,14 @@
     justify-content: center;
     text-align: center;
 }
+
 .popup__content {
     background-color: #000;
     color: rgb(228, 226, 226);
     min-width: 50%;
     position: relative;
 }
+
 .popup__close {
     position: absolute;
     right: 3%;
@@ -33,17 +37,21 @@
     color: rgb(228, 226, 226);
     text-decoration: none;
 }
+
 .popup__title {
     padding: 3%
 }
+
 .popup__text {
     padding: 4%;
 }
-.popup__text p{
+
+.popup__text p {
     margin: 1%;
     color: #999999;
 }
-.popup__text span{
+
+.popup__text span {
     font-style: italic;
 }
 
@@ -53,11 +61,12 @@
     .popup__title {
         font-size: 24px;
         padding: 25px;
-    
+
     }
+
     .popup__text {
         font-size: 24px;
         padding-bottom: 25px;
-    
-    }    
+
+    }
 }
