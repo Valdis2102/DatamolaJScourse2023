@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vlad Pribolovets</title>
+    <link rel="stylesheet" href="style/header.css">
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/slider.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Alatsi&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header" id="header">
+        <div class="header_logo">
+            <p>JS From Zero to Hero 2023</p>
+        </div>
+        <nav>
+            <div class="topnav" id="myTopnav">
+                <a href="#" id="menu" class="icon">&#9776;</a><br>
+                <p id="menu_it">
+                    <a href="#main_welcome" id="menu_item">HOME</a>
+                    <a href="#main_about" id="menu_item">ABOUT</a>
+                    <a href="#main_team" id="menu_item">MY TEAM</a>
+                    <a href="#main_experience" id="menu_item">PORTFOLIO</a>
+                    <a href="#contacts" id="menu_item">CONTACT</a>
+                </p>
+
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="main_welcome" id="main_welcome">
+            <div class="title">
+                <h1>WELCOME ON <span class="mycompany">MYPAGE</span></h1>
+                <p>This is my handmade page</p>
+            </div>
+            <div class="title photo">
+                <img src="img/me.jpg" class="photo_title" alt="">
+            </div>
+        </div>
+        <div class="main_about" id="main_about">
+            <div class="about_left">
+                <img class="mw-100" src="img/int1.jpg" alt="pc">
+            </div>
+            <div class="about_right">
+                <h1>My knowledge</h1>
+                <p></p>
+                <ol>
+                    <li>SercviseNow</li>
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>JavaScript</li>
+                    <li>GitHub</li>
+                    <li>JQuery</li>
+                    <li>TypeScript</li>
+                    <li>Bootstrap5</li>
+                    <li>Vue.js<span> (in process)</span></li>
+                </ol>
+                <p>I'm still studying and won't stop.</p>
+            </div>
+        </div>
+        <div class="main_team" id="main_team">
+            <div class="wrapper">
+                <h1>MY TEAM</h1>
+                <div class="slider_card">
+                    <div class="navigation">
+                        <label for="s1" class="bar"></label>
+                        <label for="s2" class="bar"></label>
+                        <label for="s3" class="bar"></label>
+                    </div>
+                    <div class="slides">
+                        <input type="radio" name="s" id="s1" checked>
+                        <input type="radio" name="s" id="s2">
+                        <input type="radio" name="s" id="s3">
+                        <div class="card slide s1">
+                            <div><img src="img/withDog.jpg" alt="me" class="photo"></div>
+                            <h4 class="name">Vlad Pribolovets</h4>
+                            <p class="position">Young Developer</p>
+                            <p class="aboute_position">
+                                I was the director of a taxi company until I was deprived
+                                of his rights. I sold my business and started studying.
+                            </p>
+                        </div>
+                        <div class="card slide">
+                            <div><img src="img/family.jpg" alt="family" class="photo"></div>
+                            <h4 class="name">My wife and daughter</h4>
+                            <p class="position">Motivators</p>
+                            <p class="aboute_position">
+                                My main motivators, without whose support I would not have
+                                dared to change my life so completely.
+                            </p>
+                        </div>
+                        <div class="card slide">
+                            <div><img src="img/NikaUdit.jpg" alt="sister" class="photo"></div>
+                            <h4 class="name">Nikoletta and Udit</h4>
+                            <p class="position">Ideological inspirer / Technical inspirer and advisor</p>
+                            <p class="aboute_position">
+                                My sister and her husband. She convinced me that you need to
+                                retrain to work in IT. He helped me decide on the direction.
+                                Accompanied and helped to understand coding throughout the training.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="contacts" class="popup">
+            <div class="popup__body">
+                <div class="popup__content">
+                    <a href="" class="popup__close">x</a>
+                    <div class="popup__title">
+                        <h1>Call or write to me!</h1>
+                    </div>
+                    <div class="popup__text">
+                        <p>+375-29-632-77-88</p>
+                        <p>pribolovetsvi@yandex.ru</p>
+                        <p><a href="https://valdis2102.github.io/resume/" target="_blank"
+                                style="color:rgb(228, 226, 226); border-bottom: 1px solid rgb(228, 226, 226);">My
+                                resume</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/js.js"></script>
+
+</body>
+
+</html>

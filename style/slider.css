@@ -1,0 +1,53 @@
+.slider_card{
+    overflow: hidden;
+    position: absolute;
+    left :50%;
+    transform: translate(-50%);
+    max-width: 80%;
+}
+
+.navigation{
+    position: absolute;
+    left :50%;
+    transform: translate(-50%, 50%);
+    display: flex;
+    margin-bottom: 2%;
+}
+
+.bar{
+    height: 8px;
+    width: 30px;
+    margin: 6px;
+    cursor: pointer;
+    background-color: rgb(10, 10, 10);
+    opacity: .7;
+    border-radius: 10px;
+    transition: all .4s ease;
+}
+.bar:hover{
+    opacity: 1;
+    transform: scale(1.1);
+}
+.slides input{
+    position: absolute;
+    visibility: hidden;
+}
+.slides{
+    width: 400%;
+    height: 100%;
+    display: flex;
+}
+.slide{
+    width: 25%;
+    transition: all .6s ease;
+}
+
+#s1:checked ~ .s1{
+    margin-left: -1.25%;
+}
+#s2:checked ~ .s1{
+    margin-left: -38.7%;
+}
+#s3:checked ~ .s1{
+    margin-left: -76%;
+}

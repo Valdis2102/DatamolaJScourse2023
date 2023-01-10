@@ -1,0 +1,119 @@
+:root{
+    --color: rgb(250, 243, 234);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+body{
+    font-family: 'Alatsi', serif;
+    font-size: xx-large;
+}
+.header{
+    width: 100%;
+    background-color: rgb(28, 27, 27);
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    z-index: 1;   
+    padding-bottom: 15px;
+}
+.header_logo{
+    text-transform: uppercase;
+    color: var(--color);
+    text-align: center;
+    padding: 1% 0 0 2%;
+    animation-name: twinkl;
+    animation-duration: 1.5s;
+    animation-iteration-count: 10;
+}
+.header_logo:hover{
+    animation-play-state: paused;
+}
+nav{
+    margin-left: 29%;
+    text-align: center;
+    font-size: x-large;
+}
+.topnav a{
+    color: var(--color);
+    text-align: center;
+    margin-right: 16px;
+    font-weight: bold;
+}
+#menu_item{
+    transition: 100ms;
+}
+#menu_item:hover{
+    border-bottom: 3px solid #fcac45;
+}
+.topnav .icon{
+    display: none;
+}
+
+
+@media (max-width: 980px) { 
+    body{
+        font-size: large;
+    }
+    .th{
+        height: 250px;
+    }    
+    .topnav a{
+        display: none;
+    }
+    .topnav a.icon{
+        float: right;
+        padding-top: 1%;
+        display: block;
+        color: var(--color);
+    }   
+    nav{
+        width: 50%;        
+    } 
+    .topnav.responsive{
+        position: relative;
+        
+    }
+    header .topnav.responsive{
+        height: 340px;        
+    }
+    .topnav.responsive a{       
+        display: block;
+        text-align: right;
+    }
+    .topnav.responsive p{       
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 650px){
+    .header_logo{
+        display: none;
+    }
+    nav{
+        width: 100%;
+        margin: 0;
+        padding-right: 2%;
+    }
+}
+
+@keyframes twinkl{
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: .2;
+    }
+    100%{
+        opacity: 1;
+    }
+}
