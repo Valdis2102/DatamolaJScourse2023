@@ -27,6 +27,7 @@
     color: rgb(228, 226, 226);
     min-width: 50%;
     position: relative;
+    max-width: 1800px;
 }
 
 .popup__close {
